@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\View\View;
 
-class EventsControllers extends Controller
+class EventsController extends Controller
 {
     public function index(): View
     {
@@ -16,5 +16,10 @@ class EventsControllers extends Controller
         $upComingEvents = Event::where('end_date', '>', $today)->orderBy('start_date', 'desc')->get();
         $pastEvents = Event::where('end_date', '<', $today)->orderBy('start_date', 'desc')->limit(3)->get();
         return view('events.index', compact('upComingEvents', 'pastEvents'));
+    }
+
+    public function show(Event $event): View
+    {
+        return view('events.show', compact('event'));
     }
 }

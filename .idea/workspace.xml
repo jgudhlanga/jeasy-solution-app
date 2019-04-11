@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc1c9178-3a00-400e-b710-7aabdba0c263" name="Default Changelist" comment="" />
+    <list default="true" id="fc1c9178-3a00-400e-b710-7aabdba0c263" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/events/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Events/EventsControllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Events/EventTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Events/ReadEventTest.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,10 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Events/EventsControllers.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="298">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="e#47#76#0#PHP" expanded="true" />
               </folding>
@@ -43,11 +49,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Events/EventTest.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Events/ReadEventTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="223">
+              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+              <folding>
+                <element signature="e#40#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/events/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -55,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/events/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+            <state relative-caret-position="210">
+              <caret line="35" column="22" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="35" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -73,7 +100,6 @@
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_10_105933_create_events_table.php" />
         <option value="$PROJECT_DIR$/database/factories/EventFactory.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Events/EventsControllers.php" />
         <option value="$PROJECT_DIR$/app/Modules/Events/Event.php" />
@@ -83,6 +109,10 @@
         <option value="$PROJECT_DIR$/resources/views/html.blade.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/tests/Feature/Events/EventTest.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Events/ReadEventTest.php" />
+        <option value="$PROJECT_DIR$/resources/views/events/show.blade.php" />
       </list>
     </option>
   </component>
@@ -204,13 +234,22 @@
             <path>
               <item name="jeasy-solution-events-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="jeasy-solution-events-app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jeasy-solution-events-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jeasy-solution-events-app" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jeasy-solution-events-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="jeasy-solution-events-app" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jeasy-solution-events-app" type="b2602c69:ProjectViewProjectNode" />
@@ -228,6 +267,13 @@
               <item name="jeasy-solution-events-app" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jeasy-solution-events-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jeasy-solution-events-app" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jeasy-solution-events-app" type="b2602c69:ProjectViewProjectNode" />
@@ -295,15 +341,16 @@
       <updated>1554889954495</updated>
       <workItem from="1554889955960" duration="10431000" />
       <workItem from="1554970833390" duration="671000" />
-      <workItem from="1554974390732" duration="7339000" />
+      <workItem from="1554974390732" duration="8606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20332000" />
+    <option name="totallyTimeSpent" value="21599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="385" width="1366" height="696" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25755286" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -373,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -428,27 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Events/EventsControllers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="e#47#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/events/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -466,10 +489,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Events/EventTest.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <element signature="e#47#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Events/ReadEventTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/events/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/events/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
     </entry>

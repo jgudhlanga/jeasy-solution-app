@@ -5,4 +5,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('events', 'Events\EventsControllers@index')->name('events');
+Route::resource('events', 'Events\EventsController');

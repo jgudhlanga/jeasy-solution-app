@@ -7,7 +7,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class EventTest extends TestCase
+class ReadEventTest extends TestCase
 {
    use RefreshDatabase;
 
@@ -23,7 +23,19 @@ class EventTest extends TestCase
     */
    public function a_user_can_see_list_of_events(): void
    {
-        $this->get(route('events'))
+        $this->get(route('events.index'))
+            ->assertStatus(200)
+            ->assertSeeText($this->event->title)
+            ->assertSeeText($this->event->description);
+   }
+
+   /**
+    * @test
+    */
+   public function that_a_user_can_view_an_event(): void
+   {
+        $this->get(route('events.show', [$this->event->id]))
+            ->assertViewIs('events.show')
             ->assertStatus(200)
             ->assertSeeText($this->event->title)
             ->assertSeeText($this->event->description);
