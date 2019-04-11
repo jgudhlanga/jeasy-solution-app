@@ -7,7 +7,9 @@
             @forelse($upComingEvents as $event)
                 <div class="card mb-2">
                     <div class="card-header">
-                        <h4>{{$event->title}}</h4>
+                        <a href="{{ route('events.show', [$event->id]) }}" class="card-link">
+                            <h4>{{$event->title}}</h4>
+                        </a>
                         <div>
                             <small>{{$event->address}}</small>
                         </div>
@@ -28,9 +30,7 @@
                             <div class="col-6 text-left">
                                 <small>By: {{$event->creator->name}}</small>
                             </div>
-                            <div class="col-6 text-right">
-                                <a href="#" class="btn btn-dark text-right">Read More >></a>
-                            </div>
+                            <div class="col-6 text-right"></div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,9 @@
             @forelse($pastEvents as $event)
                 <div class="card mb-2">
                     <div class="card-header">
-                        <h4>{{$event->title}}</h4>
+                        <a href="{{ route('events.show', [$event->id]) }}" class="card-link">
+                            <h4>{{$event->title}}</h4>
+                        </a>
                         <div>
                             <small>{{$event->address}}</small>
                         </div>
@@ -66,9 +68,7 @@
                             <div class="col-6 text-left">
                                 <small>By: {{$event->creator->name}}</small>
                             </div>
-                            <div class="col-6 text-right">
-                                <a href="#" class="btn btn-dark text-right">Read More >></a>
-                            </div>
+                            <div class="col-6 text-right"></div>
                         </div>
                     </div>
                 </div>
