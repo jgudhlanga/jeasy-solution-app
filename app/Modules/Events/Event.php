@@ -9,7 +9,8 @@ class Event extends Model
 {
     protected $guarded = [];
 
-    public function creator() {
+    public function creator()
+    {
         return $this->belongsTo(User::class, 'user_id');
     }
 }
