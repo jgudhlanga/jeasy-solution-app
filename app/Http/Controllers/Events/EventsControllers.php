@@ -10,7 +10,8 @@ use Illuminate\View\View;
 
 class EventsControllers extends Controller
 {
-    public function index(): View {
+    public function index(): View
+    {
         $today = Carbon::today()->format('Y-m-d');
         $upComingEvents = Event::where('end_date', '>', $today)->orderBy('start_date', 'desc')->get();
         $pastEvents = Event::where('end_date', '<', $today)->orderBy('start_date', 'desc')->limit(3)->get();
