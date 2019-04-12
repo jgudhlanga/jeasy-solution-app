@@ -35,7 +35,7 @@
                     </div>
                 </div>
             @empty
-              <div class="text-warning text-center">No Upcoming Events</div>
+              <div class="text-danger">No Upcoming Events</div>
             @endforelse
         </div>
     </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             @empty
-                <div class="text-warning text-center"><h4>No Past Events</h4></div>
+                <div class="text-danger">No Past Events</div>
             @endforelse
         </div>
     </div>

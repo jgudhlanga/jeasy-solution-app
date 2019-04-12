@@ -25,8 +25,8 @@ class ReadEventTest extends TestCase
    {
         $this->get(route('events.index'))
             ->assertStatus(200)
-            ->assertSeeText($this->event->title)
-            ->assertSeeText($this->event->description);
+            ->assertSee(htmlentities($this->event->title), ENT_QUOTES)
+            ->assertSee(htmlentities($this->event->description), ENT_QUOTES);
    }
 
    /**
@@ -37,7 +37,7 @@ class ReadEventTest extends TestCase
         $this->get(route('events.show', [$this->event->id]))
             ->assertViewIs('events.show')
             ->assertStatus(200)
-            ->assertSeeText($this->event->title)
-            ->assertSeeText($this->event->description);
+            ->assertSee(htmlentities($this->event->title), ENT_QUOTES)
+            ->assertSee(htmlentities($this->event->description), ENT_QUOTES);
    }
 }
