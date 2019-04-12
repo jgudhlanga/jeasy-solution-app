@@ -9,3 +9,14 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+.vagrant
+.env
+node_modules
+vendor
+public/mix-manifest.json
+.idea/workspace.xml
+/components
+/storage/debugbar
+/_ide_helper.php
+/storage/documents

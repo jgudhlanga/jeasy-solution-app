@@ -7,11 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS-EVENTS-APP</title>
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
+    @yield('styles')
+    @yield('header-scripts')
 </head>
 <body>
 <div class="container">
     @yield('content')
 </div>
 <script src="{{ mix('/js/app.js') }}"></script>
+    @yield('footer-scripts')
 </body>
 </html>
