@@ -6,3 +6,7 @@ Route::get('/', function () {
 });
 
 Route::resource('events', 'Events\EventsController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
