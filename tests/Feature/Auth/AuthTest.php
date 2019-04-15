@@ -35,4 +35,5 @@ class AuthTest extends TestCase
         $this->post('login', $this->user->toArray())
             ->assertRedirect('/');
     }
+
 }
