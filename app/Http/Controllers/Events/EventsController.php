@@ -31,6 +31,6 @@ class EventsController extends Controller
 
     public function store(EventRequest $request)
     {
-
+        return;
     }
 }
