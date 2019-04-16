@@ -11,8 +11,11 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 @if(!auth()->guest())
-                    <li class="nav-item {{Request::is('events*') ? 'active' : '' }}">
+                    <li class="nav-item {{Request::is('events') ? 'active' : '' }}">
                         <a class="nav-link" href="{{ route('events.index') }}">{{ __('Events') }}</a>
+                    </li>
+                    <li class="nav-item {{Request::is('events/create') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ route('events.create') }}">{{ __('New Event') }}</a>
                     </li>
                 @endif
             </ul>

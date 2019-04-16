@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Events;
 
+use App\Http\Requests\Events\EventRequest;
 use App\Modules\Events\Event;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -21,5 +22,15 @@ class EventsController extends Controller
     public function show(Event $event): View
     {
         return view('events.show', compact('event'));
+    }
+
+    public function create(): View
+    {
+        return view('events.create');
+    }
+
+    public function store(EventRequest $request)
+    {
+
     }
 }

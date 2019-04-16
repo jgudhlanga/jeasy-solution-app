@@ -4,7 +4,6 @@ namespace Tests\Feature\Auth;
 
 use App\User;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class RegisterTest extends TestCase
@@ -15,7 +14,7 @@ class RegisterTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->user = factory(User::class)->make();
+        $this->user = make(User::class);
     }
 
     /**
@@ -33,7 +32,8 @@ class RegisterTest extends TestCase
      */
     public function that_a_user_can_register()
     {
-        $this->post(route('register'), $this->user->toArray())
+        $this->withExceptionHandling()
+            ->post(route('register'), $this->user->toArray())
             ->assertRedirect('/');
     }
 }

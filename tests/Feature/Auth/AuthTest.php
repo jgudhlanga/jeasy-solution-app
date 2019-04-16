@@ -16,7 +16,7 @@ class AuthTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->user = factory(User::class)->create();
+        $this->user = create(User::class);
     }
 
     /**
@@ -32,7 +32,8 @@ class AuthTest extends TestCase
      * @test
      */
     public function that_a_user_can_log_in() {
-        $this->post('login', $this->user->toArray())
+        $this->withExceptionHandling()
+            ->post('login', $this->user->toArray())
             ->assertRedirect('/');
     }
 
