@@ -20,8 +20,8 @@
                         <div class="form-group">
                             <label for="title">{{ __('Title') }}</label>
                             <input type="text" class="form-control {{ $errors->has('title') ? ' is-invalid' : '' }}" name="title"  id="title" placeholder="Event Title">
-                            @if ($errors->has('description'))
-                                <span class="invalid-feedback" role="alert">{{ $errors->first('description') }}</span>
+                            @if ($errors->has('title'))
+                                <span class="invalid-feedback" role="alert">{{ $errors->first('title') }}</span>
                             @endif
                         </div>
                         <div class="form-group">
@@ -34,20 +34,35 @@
                         <div class="form-group">
                             <label for="start_date">{{ __('Start Date') }}</label>
                             <input type="date" class="form-control {{ $errors->has('start_date') ? ' is-invalid' : '' }}" name="start_date"  id="start_date" placeholder="Start Date">
+                            @if ($errors->has('start_date'))
+                                <span class="invalid-feedback" role="alert">{{ $errors->first('start_date') }}</span>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label for=end_date">{{ __('End Date') }}</label>
                             <input type="date" class="form-control {{ $errors->has('end_date') ? ' is-invalid' : '' }}" name=end_date"  id=end_date" placeholder="End Date">
+                            @if ($errors->has('end_date'))
+                                <span class="invalid-feedback" role="alert">{{ $errors->first('end_date') }}</span>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label for=description">{{ __('Description') }}</label>
                             <textarea class="form-control {{ $errors->has('description') ? ' is-invalid' : '' }}" name=description"  id=description" placeholder="Description"></textarea>
+                            @if ($errors->has('description'))
+                                <span class="invalid-feedback" role="alert">{{ $errors->first('description') }}</span>
+                            @endif
                         </div>
                     </div>
                     <div class="col-6">
                         <h5 class="text-center">Select a location</h5>
                         <div class="form-group">
                             <event-location></event-location>
+                            @if ($errors->has('long'))
+                                <span class="invalid-feedback" role="alert">{{ $errors->first('long') }}</span>
+                            @endif
+                            @if ($errors->has('lat'))
+                                <span class="invalid-feedback" role="alert">{{ $errors->first('lat') }}</span>
+                            @endif
                         </div>
                     </div>
                 </div>

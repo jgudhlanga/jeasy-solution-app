@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Events;
 use App\Http\Requests\Events\EventRequest;
 use App\Modules\Events\Event;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\View\View;
 
@@ -31,6 +30,17 @@ class EventsController extends Controller
 
     public function store(EventRequest $request)
     {
-        return;
+        Event::create([
+            'title' => $request->input('title'),
+            'address' => $request->input('address'),
+            'start_date' => $request->input('start_date'),
+            'end_date' => $request->input('end_date'),
+            'description' => $request->input('description'),
+            'long' => $request->input('long'),
+            'lat' => $request->input('lat'),
+            'user_id' => auth()->user()->id
+        ]);
+
+        return redirect(route('events.create'));
     }
 }
