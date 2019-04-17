@@ -1,8 +1,9 @@
 @extends('layouts.html')
 
 @section('content')
-    <form action="{{ route('events.store') }}" method="POSt" id="locationForm">
+    <form action="{{ route('events.store') }}" method="POST" id="locationForm">
         {{ csrf_field() }}
+        {{ method_field('POST') }}
         <div class="row">
             <div class="col-12 text-right mt-5">
                 <a href="{{route('events.index')}}" class="btn btn-outline-primary">
@@ -39,15 +40,15 @@
                             @endif
                         </div>
                         <div class="form-group">
-                            <label for=end_date">{{ __('End Date') }}</label>
-                            <input type="date" class="form-control {{ $errors->has('end_date') ? ' is-invalid' : '' }}" name=end_date"  id=end_date" placeholder="End Date">
+                            <label for="end_date">{{ __('End Date') }}</label>
+                            <input type="date" class="form-control {{ $errors->has('end_date') ? ' is-invalid' : '' }}" name="end_date"  id="end_date" placeholder="End Date">
                             @if ($errors->has('end_date'))
                                 <span class="invalid-feedback" role="alert">{{ $errors->first('end_date') }}</span>
                             @endif
                         </div>
                         <div class="form-group">
-                            <label for=description">{{ __('Description') }}</label>
-                            <textarea class="form-control {{ $errors->has('description') ? ' is-invalid' : '' }}" name=description"  id=description" placeholder="Description"></textarea>
+                            <label for="description">{{ __('Description') }}</label>
+                            <textarea class="form-control {{ $errors->has('description') ? ' is-invalid' : '' }}" name="description"  id="description" placeholder="Description"></textarea>
                             @if ($errors->has('description'))
                                 <span class="invalid-feedback" role="alert">{{ $errors->first('description') }}</span>
                             @endif
@@ -68,24 +69,17 @@
                 </div>
             </div>
             <div class="card-footer text-center">
-                <button class="btn btn-lg btn-success">Save</button>
+                <button class="btn btn-lg btn-success" type="submit">Save</button>
             </div>
         </div>
     </form>
 @endsection
-@section('styles')
-    <style>
-        #map{
-            height: 480px;
-            width: 100%
-        }
-    </style>
-@endsection
-@section('header-scripts')
-@endsection
 @section('footer-scripts')
+    <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
     <script>
+        CKEDITOR.replace('description');
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAP_API_KEY')}}&callback=initMap"></script>
 @endsection
+
+
 

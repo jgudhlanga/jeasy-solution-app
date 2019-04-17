@@ -48,7 +48,7 @@ class CreateEventTest extends TestCase
     {
         $this->signIn()
             ->post(route('events.store', $this->event->toArray()))
-            ->assertRedirect(route('events.create'));
+            ->assertRedirect('events/1');
         $this->assertDatabaseHas('events', [
             'title' => $this->event->title,
             'address' => $this->event->address,

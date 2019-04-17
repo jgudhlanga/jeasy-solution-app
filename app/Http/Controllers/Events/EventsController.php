@@ -6,6 +6,7 @@ use App\Http\Requests\Events\EventRequest;
 use App\Modules\Events\Event;
 use Carbon\Carbon;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
 class EventsController extends Controller
@@ -30,7 +31,7 @@ class EventsController extends Controller
 
     public function store(EventRequest $request)
     {
-        Event::create([
+        $event = Event::create([
             'title' => $request->input('title'),
             'address' => $request->input('address'),
             'start_date' => $request->input('start_date'),
@@ -38,9 +39,9 @@ class EventsController extends Controller
             'description' => $request->input('description'),
             'long' => $request->input('long'),
             'lat' => $request->input('lat'),
-            'user_id' => auth()->user()->id
+            'user_id' => Auth::user()->id
         ]);
 
-        return redirect(route('events.create'));
+        return redirect(route('events.show', [$event->id]));
     }
 }
