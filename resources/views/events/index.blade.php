@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">{!! $event->description !!}</p>
+                        <p class="card-text">{!! limit_words($event->description) !!}</p>
                         <div class="row">
                             <div class="col-6 text-left">
                                 <small class="text-muted">Start Date: {{$event->start_date}}</small>

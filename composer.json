@@ -45,7 +45,10 @@
         "psr-4": {
             "Tests\\": "tests/"
         },
-        "files": ["tests/utilities/functions.php"]
+        "files": [
+            "tests/utilities/functions.php",
+            "app/Utilities/Utility.php"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
