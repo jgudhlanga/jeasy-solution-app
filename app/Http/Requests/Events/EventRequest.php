@@ -28,7 +28,7 @@ class EventRequest extends FormRequest
             'address' => 'required',
             'start_date' => 'required',
             'end_date' => 'required',
-            'description' => 'required',
+            //'description' => 'required',
             'long' => 'required',
             'lat' => 'required',
         ];

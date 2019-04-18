@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="card-body">
-            <p class="card-text">{{ $event->description }}</p>
+            <p class="card-text">{!! $event->description !!}</p>
             <div class="row">
                 <div class="col-6 text-left">
                     <small class="text-muted">Start Date: {{$event->start_date}}</small>
@@ -53,23 +53,6 @@
 @endsection
 @section('footer-scripts')
     <script>
-       // Initialize the platform object:
-        /*var platform = new H.service.Platform({
-            'app_id': "",
-            'app_code': ""
-        });
-
-        // Obtain the default map types from the platform object
-        var maptypes = platform.createDefaultLayers();
-
-        // Instantiate (and display) a map object:
-        var map = new H.Map(
-            document.getElementById('map'),
-            maptypes.normal.map,
-            {
-                zoom: 10,
-                center: { lat: {{$event->lat}}, lng: {{$event->long}} }
-            });*/
        function initMap() {
            var uluru = {lat: {{$event->lat}}, lng: {{$event->long}}};
            var map = new google.maps.Map(document.getElementById('map'), {
