@@ -7,7 +7,7 @@
             @forelse($upComingEvents as $event)
                 <div class="card mb-2">
                     <div class="card-header">
-                        <a href="{{ route('events.show', [$event->id]) }}" class="card-link">
+                        <a href="{{ route('events.show', [$event->slug]) }}" class="card-link">
                             <h4>{{$event->title}}</h4>
                         </a>
                         <div>
@@ -45,7 +45,7 @@
             @forelse($pastEvents as $event)
                 <div class="card mb-2">
                     <div class="card-header">
-                        <a href="{{ route('events.show', [$event->id]) }}" class="card-link">
+                        <a href="{{ route('events.show', [$event->slug]) }}" class="card-link">
                             <h4>{{$event->title}}</h4>
                         </a>
                         <div>

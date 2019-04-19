@@ -33,7 +33,7 @@ class EventsController extends Controller
     {
         $event = Event::create([
             'title' => $request->input('title'),
-            'slug' => \Illuminate\Support\Str::slug($request->input('title')).'-'.uniqid(time()),
+            'slug' => $request->input('slug', \Illuminate\Support\Str::slug($request->input('title')).'-'.uniqid(time())),
             'address' => $request->input('address'),
             'start_date' => $request->input('start_date'),
             'end_date' => $request->input('end_date'),
@@ -43,6 +43,6 @@ class EventsController extends Controller
             'user_id' => Auth::user()->id
         ]);
 
-        return redirect(route('events.show', [$event->id]));
+        return redirect(route('events.show', [$event->slug]));
     }
 }

@@ -46,9 +46,9 @@ class CreateEventTest extends TestCase
      */
     public function that_it_can_store_the_event()
     {
-        $this->signIn()
+        $res = $this->signIn()
             ->post(route('events.store', $this->event->toArray()))
-            ->assertRedirect('events/1');
+            ->assertRedirect('events/'.$this->event->slug);
         $this->assertDatabaseHas('events', [
             'title' => $this->event->title,
             'address' => $this->event->address,

@@ -39,7 +39,7 @@ class ReadEventTest extends TestCase
     public function a_guest_can_not_access_event_show_endpoint()
     {
         $this->withExceptionHandling()
-            ->get(route('events.show', [$this->event->id]))
+            ->get(route('events.show', [$this->event->slug]))
             ->assertRedirect(route('login'));
     }
 
@@ -60,7 +60,7 @@ class ReadEventTest extends TestCase
    public function that_a_user_can_view_an_event(): void
    {
        $this->signIn()
-           ->get(route('events.show', [$this->event->id]))
+           ->get(route('events.show', [$this->event->slug]))
             ->assertViewIs('events.show')
             ->assertStatus(200)
             ->assertSee(htmlentities($this->event->title), ENT_QUOTES)
