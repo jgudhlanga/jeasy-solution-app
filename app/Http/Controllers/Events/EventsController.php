@@ -7,6 +7,7 @@ use App\Modules\Events\Event;
 use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 use Illuminate\View\View;
 
 class EventsController extends Controller
@@ -33,7 +34,8 @@ class EventsController extends Controller
     {
         $event = Event::create([
             'title' => $request->input('title'),
-            'slug' => $request->input('slug', \Illuminate\Support\Str::slug($request->input('title')).'-'.uniqid(time())),
+            'slug' => $request->input('slug',
+                Str::slug($request->input('title')).'-'.uniqid(time())),
             'address' => $request->input('address'),
             'start_date' => $request->input('start_date'),
             'end_date' => $request->input('end_date'),
