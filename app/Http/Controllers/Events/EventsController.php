@@ -32,10 +32,10 @@ class EventsController extends Controller
 
     public function store(EventRequest $request)
     {
+        $slug = Str::slug($request->input('title')).'-'.uniqid(time());
         $event = Event::create([
             'title' => $request->input('title'),
-            'slug' => $request->input('slug',
-                Str::slug($request->input('title')).'-'.uniqid(time())),
+            'slug' => $request->input('slug',$slug),
             'address' => $request->input('address'),
             'start_date' => $request->input('start_date'),
             'end_date' => $request->input('end_date'),

@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc1c9178-3a00-400e-b710-7aabdba0c263" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Events/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Events/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/events/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Events/CreateEventTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Events/CreateEventTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Events/ReadEventTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Events/ReadEventTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="fc1c9178-3a00-400e-b710-7aabdba0c263" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="35" column="43" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="43" />
+            <state relative-caret-position="300">
+              <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
               <folding>
                 <element signature="e#47#89#0#PHP" expanded="true" />
               </folding>
@@ -52,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/events/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
@@ -173,9 +167,9 @@
         <option value="$PROJECT_DIR$/app/Utilities/Utility.php" />
         <option value="$PROJECT_DIR$/app/Modules/Events/Event.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Events/CreateEventTest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Events/ReadEventTest.php" />
         <option value="$PROJECT_DIR$/resources/views/events/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php" />
       </list>
     </option>
   </component>
@@ -398,10 +392,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97697000" />
+    <option name="totallyTimeSpent" value="98023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16616315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -418,7 +413,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.6869565" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6869565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -768,16 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="43" />
-          <folding>
-            <element signature="e#47#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Events/ReadEventTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -792,6 +777,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="79" column="11" lean-forward="true" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Events/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+          <folding>
+            <element signature="e#47#89#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
