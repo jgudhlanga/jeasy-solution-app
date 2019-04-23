@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 use App\User;
-use App\Modules\Events\Event;
+use App\Modules\Events\Models\Event;
 use Carbon\Carbon;
 
 $factory->define(Event::class, function (Faker $faker) {

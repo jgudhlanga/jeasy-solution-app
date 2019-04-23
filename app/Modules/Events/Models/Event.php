@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Events;
+namespace App\Modules\Events\Models;
 
 use App\User;
 use Illuminate\Database\Eloquent\Model;

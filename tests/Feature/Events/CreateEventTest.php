@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Events;
 
-use App\Modules\Events\Event;
+use App\Modules\Events\Models\Event;
 use App\User;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;

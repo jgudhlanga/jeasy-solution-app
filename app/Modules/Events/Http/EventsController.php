@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Events;
+namespace App\Modules\Events\Http;
 
-use App\Http\Requests\Events\EventRequest;
-use App\Modules\Events\Event;
-use Carbon\Carbon;
 use App\Http\Controllers\Controller;
+use App\Modules\Events\Http\Requests\EventRequest;
+use App\Modules\Events\Models\Event;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
@@ -15,8 +15,10 @@ class EventsController extends Controller
     public function index(): View
     {
         $today = Carbon::today()->format('Y-m-d');
-        $upComingEvents = Event::where('end_date', '>', $today)->orderBy('start_date', 'desc')->get();
-        $pastEvents = Event::where('end_date', '<', $today)->orderBy('start_date', 'desc')->limit(3)->get();
+        $upComingEvents = Event::where('end_date', '>', $today)
+            ->orderBy('start_date', 'desc')->get();
+        $pastEvents = Event::where('end_date', '<', $today)
+            ->orderBy('start_date', 'desc')->limit(3)->get();
         return view('events.index', compact('upComingEvents', 'pastEvents'));
     }
 
@@ -32,7 +34,7 @@ class EventsController extends Controller
 
     public function store(EventRequest $request)
     {
-        $slug = Str::slug($request->input('title').'-'.uniqid(time()));
+        $slug = Str::slug($request->input('title') . '-' . uniqid(time()));
         $event = Event::create([
             'title' => $request->input('title'),
             'slug' => $request->input('slug', $slug),
