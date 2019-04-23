@@ -47,7 +47,7 @@
         },
         "files": [
             "tests/utilities/functions.php",
-            "app/Utilities/Utility.php"
+            "app/Helpers/Helpers.php"
         ]
     },
     "minimum-stability": "dev",
