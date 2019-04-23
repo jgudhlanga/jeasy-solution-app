@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Modules\Events\Repositories;
-
 
 use App\Modules\Events\Models\Event;
 use App\Repositories\AbstractRepository;

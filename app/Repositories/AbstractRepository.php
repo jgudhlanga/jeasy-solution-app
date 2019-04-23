@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Repositories;
-
 
 class AbstractRepository implements AbstractInterface
 {
@@ -36,10 +34,12 @@ class AbstractRepository implements AbstractInterface
         }
         return $update;
     }
+
     public function remove($id)
     {
         return $this->model->where('id', $id)->delete();
     }
+
     public function create(array $attributes)
     {
         $data = $this->model->create($attributes);
