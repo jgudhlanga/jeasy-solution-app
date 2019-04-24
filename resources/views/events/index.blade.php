@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">{{ $event->description }}</p>
+                        <p class="card-text">{!! limit_words($event->description, 50) !!}</p>
                         <div class="row">
                             <div class="col-6 text-left">
                                 <small class="text-muted">Start Date: {{$event->start_date}}</small>
@@ -30,7 +30,13 @@
                             <div class="col-6 text-left">
                                 <small>By: {{$event->creator->name}}</small>
                             </div>
-                            <div class="col-6 text-right"></div>
+                            <div class="col-6 text-right">
+                                @if($event->user === null)
+                                    <button class="btn btn-success">Register</button>
+                                @else
+                                    <button class="btn btn-warning">De-Register</button>
+                                @endif
+                            </div>
                         </div>
                     </div>
                 </div>

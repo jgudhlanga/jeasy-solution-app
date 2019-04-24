@@ -5276,7 +5276,7 @@ __webpack_require__.r(__webpack_exports__);
         return DATA_KEY$6;
       }
     }, {
-      key: "Modules.Events.Models.Event",
+      key: "Event",
       get: function get() {
         return Event$6;
       }
@@ -5463,7 +5463,7 @@ __webpack_require__.r(__webpack_exports__);
         return DATA_KEY$7;
       }
     }, {
-      key: "Modules.Events.Models.Event",
+      key: "Event",
       get: function get() {
         return Event$7;
       }
@@ -42600,7 +42600,7 @@ if (inBrowser && !isIE) {
   if (
     performance &&
     typeof performance.now === 'function' &&
-    getNow() > document.createEvent('Modules.Events.Models.Event').timeStamp
+    getNow() > document.createEvent('Event').timeStamp
   ) {
     // if the event timestamp, although evaluated AFTER the Date.now(), is
     // smaller than it, it means the event is using a hi-res timestamp,
@@ -52811,7 +52811,7 @@ exports.default = function (input) {
       listener = function (event) {
         var suggestionSelected = document.getElementsByClassName('pac-item-selected').length > 0;
         if (event.which === 13 && !suggestionSelected) {
-          var simulatedEvent = document.createEvent('Modules.Events.Models.Event');
+          var simulatedEvent = document.createEvent('Event');
           simulatedEvent.keyCode = 40;
           simulatedEvent.which = 40;
           origListener.apply(input, [simulatedEvent]);

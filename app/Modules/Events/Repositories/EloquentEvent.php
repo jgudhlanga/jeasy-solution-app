@@ -5,6 +5,7 @@ namespace App\Modules\Events\Repositories;
 use App\Modules\Events\Models\Event;
 use App\Repositories\AbstractRepository;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class EloquentEvent extends AbstractRepository implements EventRepository
 {
@@ -17,7 +18,17 @@ class EloquentEvent extends AbstractRepository implements EventRepository
 
     public function getUpcomingEvents()
     {
+        $select = [
+            'e.id', 'e.title', 'e.address', 'e.start_date', 'e.end_date',
+            'e.description', 'e.slug', 'e.user_id', 'p.user_id as user'
+        ];
         return $this->model
+            ->select($select)
+            ->from('events as e')
+            ->leftJoin('participants as p', function ($query) {
+                $query->on('p.event_id', '=', 'e.id');
+                $query->where('p.user_id', Auth::user()->id);
+            })
             ->where('end_date', '>', Carbon::today()->format('Y-m-d'))
             ->orderBy('start_date', 'desc')
             ->get();

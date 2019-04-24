@@ -12,7 +12,7 @@ $factory->define(Event::class, function (Faker $faker) {
     return [
         'title' => $title,
         'slug' => \Illuminate\Support\Str::slug($title).'-'.uniqid(time()),
-        'description' => $faker->paragraph(5),
+        'description' => $faker->paragraph(20),
         'address' => $faker->address,
         'lat' => $faker->latitude,
         'long' => $faker->longitude,
