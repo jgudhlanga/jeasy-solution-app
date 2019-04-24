@@ -25,7 +25,7 @@ class EventsController extends Controller
         $participant = Participant::where('user_id', $user->id)
             ->where('event_id', $event->id)
             ->first();
-        if(!$participant) {
+        if (!$participant) {
             $this->event->registerForEvent($event);
             return response(['message' => 'Registered'], 201);
         }

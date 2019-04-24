@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc1c9178-3a00-400e-b710-7aabdba0c263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Modules/Events/Http/Controllers/Api/EventsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Events/Http/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Events/Http/Controllers/EventsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Events/Repositories/EloquentEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Events/Repositories/EloquentEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Events/Repositories/EventRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Events/Repositories/EventRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/EventRegistration.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/EventRegistration.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/events/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/html.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/html.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Events/Http/Controllers/Api/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Events/Http/Controllers/Api/EventsController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Modules/Events/Http/Controllers/Api/EventsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="32" column="41" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="300">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding>
                 <element signature="e#60#96#0#PHP" expanded="true" />
               </folding>
@@ -76,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/components/EventRegistration.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="73">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -185,10 +173,10 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/html.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/config.js" />
-        <option value="$PROJECT_DIR$/app/Modules/Events/Http/Controllers/Api/EventsController.php" />
         <option value="$PROJECT_DIR$/app/Modules/Events/Repositories/EventRepository.php" />
         <option value="$PROJECT_DIR$/app/Modules/Events/Repositories/EloquentEvent.php" />
         <option value="$PROJECT_DIR$/resources/js/components/EventRegistration.vue" />
+        <option value="$PROJECT_DIR$/app/Modules/Events/Http/Controllers/Api/EventsController.php" />
       </list>
     </option>
   </component>
@@ -428,12 +416,12 @@
       <workItem from="1555332810310" duration="1016000" />
       <workItem from="1555391019071" duration="18572000" />
       <workItem from="1555999980189" duration="24781000" />
-      <workItem from="1556104274551" duration="3336000" />
+      <workItem from="1556104274551" duration="3740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127892000" />
+    <option name="totallyTimeSpent" value="128296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="385" width="1366" height="696" extended-state="6" />
@@ -806,16 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Modules/Events/Http/Controllers/Api/EventsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="41" />
-          <folding>
-            <element signature="e#60#96#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Events/Repositories/EventRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -838,8 +816,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/EventRegistration.vue">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Modules/Events/Http/Controllers/Api/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#60#96#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
