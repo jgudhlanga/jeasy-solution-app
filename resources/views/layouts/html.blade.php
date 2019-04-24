@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="{{mix('css/app.css')}}">
     @yield('styles')
     @yield('header-scripts')
+    <script>
+        window.Laravel = {
+            csrfToken: '{{ csrf_token() }}',
+            basePath: '{{ url('/') }}'
+        }
+    </script>
 </head>
 <body>
 @include('layouts.partials.menu')

@@ -32,9 +32,17 @@
                             </div>
                             <div class="col-6 text-right">
                                 @if($event->user === null)
-                                    <button class="btn btn-success">Register</button>
+                                    <event-registration
+                                        text="Register"
+                                        mode="btn-success"
+                                        event-id="{{ $event->id }}"
+                                    ></event-registration>
                                 @else
-                                    <button class="btn btn-warning">De-Register</button>
+                                    <event-registration
+                                            text="De-Register"
+                                            mode="btn-warning"
+                                            event-id="{{ $event->id }}"
+                                    ></event-registration>
                                 @endif
                             </div>
                         </div>
