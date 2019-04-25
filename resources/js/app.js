@@ -14,6 +14,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('event-location', require('./components/EventLocation.vue').default);
 Vue.component('event-registration', require('./components/EventRegistration.vue').default);
 Vue.component('clock', require('./components/Clock.vue').default);
+Vue.component('stock', require('./components/Stock.vue').default);
 
 
 const app = new Vue({

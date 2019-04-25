@@ -8,7 +8,7 @@
                 <div class="card-header">Stocks</div>
 
                 <div class="card-body">
-                    Stocks
+                    <stock></stock>
                 </div>
             </div>
         </div>
