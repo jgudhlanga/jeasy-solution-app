@@ -57,7 +57,7 @@
                     <div class="col-6">
                         <h5 class="text-center">Select a location</h5>
                         <div class="form-group">
-                            <event-location></event-location>
+                            <location-field></location-field>
                             @if ($errors->has('long'))
                                 <span class="invalid-feedback" role="alert">{{ $errors->first('long') }}</span>
                             @endif

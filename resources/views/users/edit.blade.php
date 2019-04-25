@@ -26,6 +26,11 @@
                                     <span class="invalid-feedback" role="alert">{{ $errors->first('email') }}</span>
                                 @endif
                             </div>
+                            <div class="form-group">
+                                <location-field
+                                        lat="{{$user->lat}}"
+                                        lng="{{$user->long}}"></location-field>
+                            </div>
                         </div>
                     </div>
                 </div>

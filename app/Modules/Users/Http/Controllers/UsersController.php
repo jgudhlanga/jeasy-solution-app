@@ -19,8 +19,9 @@ class UsersController extends Controller
     {
         $user = Auth::user();
         $user->name = $request->input('name');
+        $user->lat = $request->input('lat');
+        $user->long = $request->input('lng');
         $user->save();
-
         return redirect()->back();
     }
 }

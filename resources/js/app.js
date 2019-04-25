@@ -10,8 +10,7 @@ Vue.use(VueGoogleMaps, {
     },
 });
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('event-location', require('./components/EventLocation.vue').default);
+Vue.component('location-field', require('./components/LocationField.vue').default);
 Vue.component('event-registration', require('./components/EventRegistration.vue').default);
 Vue.component('clock', require('./components/Clock.vue').default);
 Vue.component('stock', require('./components/Stock.vue').default);
