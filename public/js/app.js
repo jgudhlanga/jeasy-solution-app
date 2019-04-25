@@ -1977,7 +1977,7 @@ __webpack_require__.r(__webpack_exports__);
     this.getStockPrices();
     setInterval(function () {
       _this.getStockPrices();
-    }, 2000);
+    }, 3000);
   },
   data: function data() {
     return {

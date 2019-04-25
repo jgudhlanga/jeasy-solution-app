@@ -21,7 +21,7 @@
             this.getStockPrices();
             setInterval(() => {
                 this.getStockPrices();
-            }, 2000);
+            }, 3000);
         },
         data () {
             return {

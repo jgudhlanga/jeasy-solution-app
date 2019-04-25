@@ -28,5 +28,3 @@ class UsersController extends Controller
         return $stocks;
     }
 }
-
-
