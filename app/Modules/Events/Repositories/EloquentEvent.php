@@ -2,6 +2,7 @@
 
 namespace App\Modules\Events\Repositories;
 
+use App\Modules\Events\Events\EventRegistered;
 use App\Modules\Events\Models\Event;
 use App\Modules\Events\Models\Participant;
 use App\Repositories\AbstractRepository;
@@ -50,6 +51,8 @@ class EloquentEvent extends AbstractRepository implements EventRepository
             'event_id' => $event->id,
             'user_id' => Auth::user()->id
         ]);
+
+        event(new EventRegistered($event, Auth::user()));
         return true;
     }
 
