@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Modules\Events\Mails;
-
 
 use App\Modules\Events\Models\Event;
 use App\User;

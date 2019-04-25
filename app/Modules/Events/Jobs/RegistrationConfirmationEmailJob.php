@@ -36,4 +36,3 @@ class RegistrationConfirmationEmailJob implements ShouldQueue
             ->send(new RegistrationConfirmationEmail($this->user, $this->event));
     }
 }
-
